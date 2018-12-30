@@ -94,6 +94,7 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void consoleBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consoleBtnActionPerformed
         CompanyWindow.currentCompany.setEmployeeList(EmployeeWindow.currentEmployeeList);
+        printConsole();
     }//GEN-LAST:event_consoleBtnActionPerformed
 
     private void printConsole(){
@@ -102,7 +103,6 @@ public class MainWindow extends javax.swing.JFrame {
             "Telefono de la empresa: "+ CompanyWindow.currentCompany.getPhone() +"\n" +
                 "---------- EMPLEADOS ---------" + "\n");
         printEmployees();
-        printSucursales();
         System.out.println("---------- SUCURSALES ----------");
         printSucursales();
     }
